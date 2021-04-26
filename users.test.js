@@ -58,8 +58,6 @@ describe('Database Tests', () => {
 
         const findUser = await usersCollection.findOne({email: sampleUser.email});
 
-        console.log(findUser);
-
         expect(findUser.name).toBe(sampleUser.name);
 
     }, 30000)
